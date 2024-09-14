@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border On text</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 110px;
+            font-weight: 900;
+            -webkit-text-stroke: 4px #000;
+            color: transparent;
+        }
+
+        h1::selection {
+            color: yellow;
+            background-color: #000;
+        }
+
+        h2::selection {
+            color: green;
+            background-color: #000;
+        }
+
+        h3::selection {
+            color: red;
+            background-color: #000;
+        }
+
+        h4::selection {
+            color: blue;
+            background-color: #000;
+        }
+
+        h5::selection {
+            color: white;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Alekh</h1>
+    <h2>Sunny</h2>
+    <h3>Rajesh</h3>
+    <h4>Sudha</h4>
+    <h5>Ichchha</h5>
+</body>
+
+</html>

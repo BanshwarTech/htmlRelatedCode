@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        form input {
+            height: 40px;
+            width: 500px;
+            border-radius: 5px;
+        }
+
+        form button {
+            height: 30px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: green;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Enter Name"><br><br>
+        <input type="password" placeholder="Enter Password"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault()
+        })
+    </script>
+</body>
+
+</html>

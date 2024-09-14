@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Selector in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        button {
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 3px;
+            padding: 12px 20px;
+            margin: 50px;
+            color: #fff;
+            border: none;
+            background-color: rgb(16, 179, 117);
+            transition: all ease 0.5s;
+        }
+        button:active{
+            scale: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Explore Me</button>
+</body>
+
+</html>

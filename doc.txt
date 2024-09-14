@@ -1,0 +1,24 @@
+8Boilerplate Shortcut
+11Font Finder  Extension :
+12ColorZilla Extension
+19 Remove background image :remove.bg
+
+
+root variables in css:
+
+
+:root{
+
+    --pri:red;
+}
+
+then use one the position as "var(--pri)".
+
+
+44
+wappalyzer extension : we use to know all details about any website line framework etc.
+
+
+45 
+newmorphism website :
+

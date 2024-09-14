@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Wheel Css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #box {
+            height: 300px;
+            width: 300px;
+            /* background-color: red; */
+            background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
+            border-radius: 50%;
+            animation: anime 2s linear infinite;
+            border: 3px solid #000;
+        }
+
+        @keyframes anime {
+            100% {
+                rotate: 360deg;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>

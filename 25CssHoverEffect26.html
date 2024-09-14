@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Hover Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #box {
+            height: 300px;
+            width: 300px;
+            background-image: url(Images/IMG-20231215-WA0001.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bottom {
+            height: 40%;
+            width: 100%;
+            background: linear-gradient(transparent, black);
+            position: absolute;
+            bottom: -40%;
+            transform: all ease 0.5s;
+        }
+
+        #box:hover .bottom {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="bottom"></div>
+    </div>
+</body>
+
+</html>

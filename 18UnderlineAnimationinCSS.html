@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underline Animation in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        h1 {
+            font-weight: 900;
+            position: relative;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0%;
+            background-color: #333;
+            transition: all ease 1s;
+        }
+
+        h1:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ALEKH BANSHWAR</h1>
+</body>
+
+</html>

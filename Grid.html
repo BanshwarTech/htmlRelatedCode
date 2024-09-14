@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            background: linear-gradient(to right bottom, red, yellow, green, blue);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .grid-col {
+            height: 50px;
+            background: linear-gradient(to right bottom, black, white, black);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- div.grid-col*4 -->
+        <div class="grid-col">1</div>
+        <div class="grid-col">2</div>
+        <div class="grid-col">3</div>
+        <div class="grid-col">4</div>
+        <div class="grid-col">5</div>
+        <div class="grid-col">6</div>
+        <div class="grid-col">7</div>
+        <div class="grid-col">8</div>
+    </div>
+</body>
+
+</html>

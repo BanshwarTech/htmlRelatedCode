@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated loader using CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            padding: 50px;
+        }
+
+        #loader {
+            height: 100px;
+            width: 100px;
+            /* background-color: red; */
+            border: 5px solid #ddd;
+            border-radius: 50%;
+            border-top-color: #333;
+            animation: rotate 1s infinite;
+            display: flex;
+        }
+
+        @keyframes rotate {
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"></div>
+</body>
+
+</html>

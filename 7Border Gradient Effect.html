@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Gradient Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #gola {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* border: 2px solid red; */
+
+            background: linear-gradient(rgba(240, 240, 6, 0.774), rgb(230, 153, 9), pink, purple, blue);
+            padding: 2px;
+        }
+
+        #gola img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gola">
+        <img src="Images/IMG-20231215-WA0001.jpg" alt="">
+    </div>
+</body>
+
+</html>

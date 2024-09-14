@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Scrollbar in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .page1 {
+            height: 100%;
+            width: 100%;
+            border-bottom: 2px solid #000;
+        }
+
+        body::-webkit-scrollbar {
+            background-color: transparent;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: linear-gradient(red, blue, green);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page1"></div>
+    <div class="page1"></div>
+    <div class="page1"></div>
+    <div class="page1"></div>
+</body>
+
+</html>

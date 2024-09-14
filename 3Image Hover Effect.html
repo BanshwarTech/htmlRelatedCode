@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy';
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #box {
+            height: 380px;
+            width: 380px;
+            background-color: rgb(73, 73, 73);
+            overflow: hidden;
+        }
+
+        #box img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            transition: all ease 1s;
+        }
+
+        #box:hover img {
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="">
+
+    </div>
+</body>
+
+</html>
